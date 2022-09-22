@@ -1,0 +1,12 @@
+.header {
+  text-align: left;
+  font-size: 18vw;
+  font-weight: 900;
+
+  height: 100vh;
+  border-bottom: white 1px solid;
+}
+
+.container {
+  mix-blend-mode: difference;
+}
