@@ -1,8 +1,9 @@
 .header {
   text-align: left;
   font-weight: 600;
-  height: 300vh;
+  height: 100vh;
   position: relative;
+  overflow-y: hidden;
 }
 
 .nav-bar {
@@ -12,11 +13,10 @@
   font-size: 1em;
 }
 
-.nav-bar > div {
-  font-size: 5vw;
+.nav-bar > Link {
+  font-size: 6vw;
 }
 .title {
-  margin-top: 100px;
   font-size: 30vw;
   mix-blend-mode: difference;
   color: white;

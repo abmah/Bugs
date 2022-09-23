@@ -2,18 +2,25 @@ import React, { useState, useRef, useEffect } from "react";
 
 import "./header.css";
 import AnimatedText from "./AnimatedText";
+import { Link } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 export default function Header() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-    bounce: 0.25,
-  });
+  // const [distance, setDistance] = useState(0);
 
-  const [replay, setReplay] = useState(true);
-  // Placeholder text data, as if from API
+  // const { scrollYProgress, scrollY } = useScroll();
+  // const scaleX = useSpring(scrollYProgress, {
+  //   stiffness: 100,
+  //   damping: 30,
+  //   restDelta: 0.001,
+  //   bounce: 0.25,
+  // });
+
+  // useEffect(() => {
+  //   return scrollY.onChange((latest) => {
+  //     // console.log("Page scroll: ", latest);
+  //     setDistance(latest);
+  //   });
+  // }, []);
 
   // Placeholder text data, as if from API
   const placeholderText = [
@@ -33,24 +40,18 @@ export default function Header() {
   };
 
   // Quick and dirt for the example
-  const handleReplay = () => {
-    setReplay(!replay);
-    setTimeout(() => {
-      setReplay(true);
-    }, 600);
-  };
 
   return (
     <div className="header">
       <div className="nav-bar">
-        <div>menu</div>
-        <div>cart</div>
+        <Link to={"/body"}>menu</Link>
+        <Link>menu</Link>
       </div>
       <motion.div
         className="title"
         initial="hidden"
         // animate="visible"
-        animate={replay ? "visible" : "hidden"}
+        animate={"visible"}
         variants={container}
       >
         <div className="container">
@@ -60,9 +61,9 @@ export default function Header() {
         </div>
       </motion.div>
 
-      <div className="bottom-bar">
+      {/* <div className="bottom-bar">
         <motion.div className="line" style={{ scaleX: scaleX }} />
-      </div>
+      </div> */}
     </div>
   );
 }
