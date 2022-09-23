@@ -35,13 +35,9 @@
   0% {
     transform: translateY(0);
   }
-  10% {
-    transform: translateY(5%);
-    font-size: 25vw;
-  }
 
   100% {
-    transform: translateY(-100%);
+    transform: translateY(100vh);
   }
 }
 
