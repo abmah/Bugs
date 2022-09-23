@@ -1,12 +1,48 @@
 .header {
   text-align: left;
-  font-size: 18vw;
-  font-weight: 900;
+  font-weight: 600;
+  height: 300vh;
+  position: relative;
+}
 
-  height: 100vh;
-  border-bottom: white 1px solid;
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+}
+
+.nav-bar > div {
+  font-size: 5vw;
+}
+.title {
+  margin-top: 100px;
+  font-size: 30vw;
+  mix-blend-mode: difference;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.header-title {
+  text-align: center;
+}
+.bottom-bar {
+  display: flex;
+
+  justify-content: center;
+}
+.line {
+  width: 100vw;
+  height: 10px;
+  background-color: white;
+  mix-blend-mode: difference;
+  bottom: 0;
+  position: fixed;
 }
 
 .container {
-  mix-blend-mode: difference;
+  text-align: center;
 }

@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
-  background-color: purple;
+  background-color: #f5f0ec;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body {
@@ -55,3 +56,4 @@ code {
   --step-9: clamp(6.77rem, calc(5.05rem + 8.59vw), 11.18rem);
   --step-10: clamp(8.13rem, calc(5.85rem + 11.4vw), 13.97rem);
 }
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
