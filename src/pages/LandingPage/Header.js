@@ -4,6 +4,7 @@ import "./header.css";
 import AnimatedText from "./AnimatedText";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
+import caterpiller from "../../images/caterpillar.jpg";
 export default function Header() {
   // const [distance, setDistance] = useState(0);
 
@@ -44,8 +45,8 @@ export default function Header() {
   return (
     <div className="header">
       <div className="nav-bar">
-        <Link to={"/body"}>menu</Link>
-        <Link>menu</Link>
+        <Link to={"/menu"}>collection</Link>
+        <Link>cart</Link>
       </div>
       <motion.div
         className="title"
@@ -60,7 +61,7 @@ export default function Header() {
           })}
         </div>
       </motion.div>
-
+      <img src={caterpiller} alt="caterpiller" className="caterpiller" />
       {/* <div className="bottom-bar">
         <motion.div className="line" style={{ scaleX: scaleX }} />
       </div> */}
