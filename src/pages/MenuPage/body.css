@@ -57,38 +57,40 @@
 
 .caterpiller1 {
   width: 80vw;
-  height: 200px;
+
   object-fit: cover;
 
   position: absolute;
-  top: 60%;
+
   left: 10%;
   z-index: -1;
   animation: expand 1.2s forwards;
+  height: 10vw;
+  top: 25vw;
 }
 
 @keyframes expand {
   0% {
     width: 80vw;
-    height: 200px;
+    height: 10vw;
     object-fit: cover;
     filter: grayscale(1);
     position: absolute;
-    top: 60%;
+
     left: 10%;
     z-index: -1;
   }
   80% {
-    transform: translateY(-300px);
     height: 500px;
     object-fit: cover;
     object-position: left;
   }
   100% {
-    transform: translateY(-300px);
     height: 500px;
-    object-fit: cover;
     filter: grayscale(0);
+    object-fit: cover;
+    /* filter: grayscale(0); */
     object-position: center;
+    transform: translateY(-100px);
   }
 }

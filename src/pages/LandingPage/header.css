@@ -21,7 +21,7 @@
 .title {
   font-size: 30vw;
   mix-blend-mode: difference;
-  color: white;
+  color: black;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -51,11 +51,11 @@
 
 .caterpiller {
   width: 80vw;
-  height: 200px;
+  height: 10vw;
   object-fit: cover;
   filter: grayscale(1);
   position: absolute;
-  top: 60%;
+  top: 25vw;
   left: 10%;
   z-index: -1;
 }
