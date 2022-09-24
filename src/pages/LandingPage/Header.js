@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import "./header.css";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../utils/AnimatedText";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 import caterpiller from "../../images/caterpillar.jpg";

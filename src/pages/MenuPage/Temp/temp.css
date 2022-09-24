@@ -1,0 +1,58 @@
+.header-body {
+  text-align: left;
+  font-weight: 600;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  color: black;
+}
+
+.nav-bar-body {
+  animation: hide 0.5s ease 0.2s forwards;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+}
+
+.nav-bar-body > * {
+  font-size: 6vw;
+  text-decoration: none;
+}
+
+.title-body {
+  font-size: 30vw;
+  /* animation: dissapear 0.8s ease-in 0s forwards; */
+  flex-direction: column;
+  mix-blend-mode: difference;
+  color: white;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@keyframes dissapear {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
