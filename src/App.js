@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Cursor />
+      {/* <Cursor /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />} />

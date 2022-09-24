@@ -73,6 +73,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(14vw);
+    transform: translateX(13vw);
   }
 }
