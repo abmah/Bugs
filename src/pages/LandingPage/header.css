@@ -10,7 +10,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1em;
 }
 
 .nav-bar > * {
@@ -58,4 +57,8 @@
   top: 25vw;
   left: 10%;
   z-index: -1;
+}
+
+.explain {
+  font-size: 1vw;
 }

@@ -1,9 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+// import React, { useState, useRef, useEffect } from "react";
 
 import "./header.css";
 import AnimatedText from "../utils/AnimatedText";
 import { Link } from "react-router-dom";
-import { motion, useScroll, useSpring } from "framer-motion";
+// import { motion, useScroll, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import caterpiller from "../../images/caterpillar.jpg";
 export default function Header() {
   // const [distance, setDistance] = useState(0);
@@ -47,6 +48,10 @@ export default function Header() {
       <div className="nav-bar">
         <Link to={"/collection"}>collection</Link>
         <Link>cart</Link>
+      </div>
+      <div className="explain">
+        *this website is not about bugs but rather insects but bugs sounded
+        better
       </div>
       <motion.div
         className="title"

@@ -20,6 +20,10 @@ export default function TempPage() {
         <div className="nav-hide-1">collection</div>
         <div className="nav-hide-2">cart</div>
       </div>
+      <div className="explain-body">
+        *this website is not about bugs but rather insects but bugs sounded
+        better
+      </div>
       <motion.div
         className="title-body"
         initial="visiable"
