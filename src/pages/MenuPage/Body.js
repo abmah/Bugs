@@ -10,7 +10,14 @@ export default function Body() {
 
   const showPage = (
     <div>
-      <img src={caterpiller} alt="caterpiller" className="caterpiller1" />
+      <div className="cater">
+        <img src={caterpiller} alt="caterpiller" className="caterpiller1" />
+        <div className="cater1">Caterpillar</div>
+        <div className="cater2">
+          not a bug lookgs ok has very mild acne and will be around the day
+        </div>
+      </div>
+      <div>hello</div>
     </div>
   );
   return <>{previousPage ? <TempPage /> : showPage}</>;

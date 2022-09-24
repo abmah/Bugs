@@ -1,10 +1,7 @@
 .caterpiller1 {
   width: 80vw;
-
   object-fit: cover;
-
   position: absolute;
-
   left: 10%;
   z-index: -1;
   animation: expand 1.2s forwards;
@@ -35,5 +32,50 @@
     /* filter: grayscale(0); */
     object-position: center;
     transform: translateY(-100px);
+  }
+}
+
+.cater1 {
+  font-size: 15vw;
+  color: white;
+  animation: slide-from-up 1.2s forwards;
+  mix-blend-mode: difference;
+}
+.cater {
+  height: 800px;
+}
+.cater2 {
+  position: absolute;
+  right: 30px;
+  max-width: 30vw;
+  font-size: 3vw;
+  top: 400px;
+  font-weight: 600;
+  color: rgb(169, 169, 169);
+  mix-blend-mode: difference;
+  animation: slide-from-bottom 1.6s forwards;
+}
+
+@keyframes slide-from-up {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+}
+@keyframes slide-from-bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

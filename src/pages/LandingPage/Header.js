@@ -45,7 +45,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="nav-bar">
-        <Link to={"/menu"}>collection</Link>
+        <Link to={"/collection"}>collection</Link>
         <Link>cart</Link>
       </div>
       <motion.div

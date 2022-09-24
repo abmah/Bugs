@@ -7,10 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
+      <Cursor />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />} />
-          <Route path="/menu" element={<Body />} />
+          <Route path="/collection" element={<Body />} />
         </Routes>
       </BrowserRouter>
     </div>
