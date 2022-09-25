@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 export default function SingleProduct({ product }) {
-  const [ref, inView] = useInView({});
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.5 });
   return (
     <div className="product" key={product.id}>
       <div className="product-image-container">
