@@ -4,6 +4,10 @@
   justify-content: left;
 }
 
+.product {
+  margin-bottom: 15vw;
+}
+
 .product-image {
   width: 80vw;
   object-fit: cover;
@@ -36,47 +40,42 @@
   font-size: 10vw;
   margin-left: -10vw;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  mix-blend-mode: difference;
+  color: rgb(0, 0, 0);
+
   animation: slide-from-bottom 1.6s forwards;
 }
 
 .product-description {
-  font-size: 3vw;
-  max-width: 25vw;
+  font-size: 2vw;
+
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  mix-blend-mode: difference;
+  color: rgb(0, 0, 0);
 }
 
 .product-price {
   font-size: 3vw;
-  margin-left: -60px;
-  max-width: 25vw;
+
+  max-width: 45vw;
   font-weight: 600;
-  mix-blend-mode: difference;
-  color: rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
 }
 
-.price-highlight {
-  mix-blend-mode: unset;
-  color: gold;
-}
 .product-status {
   font-size: 3vw;
-  margin-left: -40px;
+
   max-width: 25vw;
   font-weight: 600;
-  mix-blend-mode: difference;
-  color: rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
 }
 .product-quantity {
   font-size: 3vw;
-  margin-left: -10px;
+
   max-width: 25vw;
   font-weight: 600;
-  mix-blend-mode: difference;
-  color: rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
 }
 
 .add-to-cart-button {

@@ -7,7 +7,8 @@ const ProductList = [
     name: "Ladybug",
     image: ladybug,
     price: 0.43,
-    description: "cute little ladybug",
+    description:
+      "Ladybugs appear as half-spheres, tiny, spotted, round or oval-shaped domes. They have short legs and antennae. Their distinctive spots and attractive colors are meant to make them unappealing to predators. Ladybugs can secrete a fluid from joints in their legs which gives them a foul taste.",
     status: "available",
     quantity: 32,
     total: 0,
