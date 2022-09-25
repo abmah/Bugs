@@ -7,20 +7,24 @@ export default function SingleProduct({ product }) {
       <div className="product-image-container">
         <img
           style={{
-            width: product.id % 2 === 0 ? "50vw" : "30vw",
+            width: product.id % 2 === 0 ? "70vw" : "60vw",
           }}
           ref={ref}
           className={`product-image ${inView ? "image-animation" : ""}`}
           src={product.image}
           alt={product.name}
         />
-      </div>
-      <div className="product-details">
-        <div className="product-name">{product.name}</div>
-        <div className="product-price">{product.price}</div>
-        <div className="product-description">{product.description}</div>
-        <div className="product-status">{product.status}</div>
-        <div className="product-quantity">{product.quantity}</div>
+
+        <div className="product-details">
+          <div className="product-name">{product.name}</div>
+          <div className="product-description">{product.description}</div>
+          <div className="product-price">
+            Price: <span className="price-highlight">{product.price}</span>
+          </div>
+          <div className="product-status">{product.status}</div>
+          <div className="product-quantity">quantity: {product.quantity}</div>
+          <button className="add-to-cart-button">add to cart</button>
+        </div>
       </div>
     </div>
   );

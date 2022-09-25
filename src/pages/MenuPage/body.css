@@ -42,7 +42,7 @@
   mix-blend-mode: difference;
 }
 .cater {
-  height: 800px;
+  height: 700px;
 }
 .cater2 {
   position: absolute;
@@ -102,5 +102,5 @@
 }
 
 .space {
-  height: 50vh;
+  height: 200px;
 }

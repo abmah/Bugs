@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import { motion, useScroll, useSpring } from "framer-motion";
 import { motion } from "framer-motion";
 import caterpiller from "../../images/caterpillar.jpg";
-import Test from "../Test/Test";
+import TextImage from "../Text/TextImage";
 export default function Header() {
   // const [distance, setDistance] = useState(0);
 
@@ -74,7 +74,7 @@ export default function Header() {
           </div>
         </motion.div>
       ) : (
-        <Test />
+        <TextImage />
       )}
       <img src={caterpiller} alt="caterpiller" className="caterpiller" />
       {/* <div className="bottom-bar">

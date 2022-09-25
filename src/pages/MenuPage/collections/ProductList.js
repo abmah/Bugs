@@ -6,7 +6,7 @@ const ProductList = [
     id: 1,
     name: "Ladybug",
     image: ladybug,
-    price: 0,
+    price: 0.43,
     description: "cute little ladybug",
     status: "available",
     quantity: 32,

@@ -1,7 +1,7 @@
 .product-image-container {
   height: 50vw;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .product-image {
@@ -30,4 +30,61 @@
     object-fit: cover;
     object-position: center;
   }
+}
+
+.product-name {
+  font-size: 10vw;
+  margin-left: -10vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+  animation: slide-from-bottom 1.6s forwards;
+}
+
+.product-description {
+  font-size: 3vw;
+  max-width: 25vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+}
+
+.product-price {
+  font-size: 3vw;
+  margin-left: -60px;
+  max-width: 25vw;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+}
+
+.price-highlight {
+  mix-blend-mode: unset;
+  color: gold;
+}
+.product-status {
+  font-size: 3vw;
+  margin-left: -40px;
+  max-width: 25vw;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+}
+.product-quantity {
+  font-size: 3vw;
+  margin-left: -10px;
+  max-width: 25vw;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+}
+
+.add-to-cart-button {
+  background-color: transparent;
+  border: none;
+  font-family: poppins;
+  font-weight: 900;
+  font-size: 3vw;
+  margin-top: 2vw;
+  cursor: pointer;
 }
