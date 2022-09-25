@@ -6,6 +6,9 @@ export default function SingleProduct({ product }) {
     <div className="product" key={product.id}>
       <div className="product-image-container">
         <img
+          style={{
+            width: product.id % 2 === 0 ? "50vw" : "30vw",
+          }}
           ref={ref}
           className={`product-image ${inView ? "image-animation" : ""}`}
           src={product.image}

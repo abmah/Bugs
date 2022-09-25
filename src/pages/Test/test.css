@@ -1,0 +1,43 @@
+.page-wrapper {
+  display: flex;
+  font-weight: 600;
+}
+
+.project-list {
+  /* z-index: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10.2vw;
+}
+
+.project-title {
+  font-size: 30vw;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  transition: opacity 0.5s ease;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-title {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.project-list:hover .project-title {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.project-item:hover .project-title {
+  opacity: 1;
+}
+
+.project-media {
+  position: fixed;
+  top: 3vw;
+  z-index: 3000;
+  pointer-events: none;
+  /* mix-blend-mode: ; */
+  filter: grayscale(1);
+}

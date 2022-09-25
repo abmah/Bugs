@@ -1,11 +1,12 @@
 // import React, { useState, useRef, useEffect } from "react";
-
+import { useState } from "react";
 import "./header.css";
 import AnimatedText from "../utils/AnimatedText";
 import { Link } from "react-router-dom";
 // import { motion, useScroll, useSpring } from "framer-motion";
 import { motion } from "framer-motion";
 import caterpiller from "../../images/caterpillar.jpg";
+import Test from "../Test/Test";
 export default function Header() {
   // const [distance, setDistance] = useState(0);
 
@@ -43,6 +44,11 @@ export default function Header() {
 
   // Quick and dirt for the example
 
+  const [switchText, setSwitchText] = useState(true);
+  setTimeout(() => {
+    setSwitchText(false);
+  }, 2000);
+
   return (
     <div className="header">
       <div className="nav-bar">
@@ -53,19 +59,23 @@ export default function Header() {
         *this website is not about bugs but rather insects but bugs sounded
         better
       </div>
-      <motion.div
-        className="title"
-        initial="hidden"
-        // animate="visible"
-        animate={"visible"}
-        variants={container}
-      >
-        <div className="container">
-          {placeholderText.map((item, index) => {
-            return <AnimatedText {...item} key={index} />;
-          })}
-        </div>
-      </motion.div>
+      {switchText ? (
+        <motion.div
+          className="title"
+          initial="hidden"
+          // animate="visible"
+          animate={"visible"}
+          variants={container}
+        >
+          <div className="container">
+            {placeholderText.map((item, index) => {
+              return <AnimatedText {...item} key={index} />;
+            })}
+          </div>
+        </motion.div>
+      ) : (
+        <Test />
+      )}
       <img src={caterpiller} alt="caterpiller" className="caterpiller" />
       {/* <div className="bottom-bar">
         <motion.div className="line" style={{ scaleX: scaleX }} />
