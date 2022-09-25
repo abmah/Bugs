@@ -27,6 +27,7 @@ export default function Body() {
     <div>
       <div className="main-cart">cart</div>
       {pageHeader}
+      <div className="space"></div>
       <Product />
     </div>
   );

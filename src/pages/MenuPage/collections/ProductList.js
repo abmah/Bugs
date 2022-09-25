@@ -1,8 +1,11 @@
+import bee from "../../../images/bee.jpg";
+import beetle from "../../../images/beetle.jpg";
+import ladybug from "../../../images/ladybug.jpg";
 const ProductList = [
   {
     id: 1,
     name: "Ladybug",
-    image: "",
+    image: ladybug,
     price: 0,
     description: "cute little ladybug",
     status: "available",
@@ -13,7 +16,7 @@ const ProductList = [
   {
     id: 2,
     name: "Bees",
-    image: "",
+    image: bee,
     price: 343,
     description: "bees look good and smell good",
     status: "available",
@@ -24,7 +27,7 @@ const ProductList = [
   {
     id: 3,
     name: "Beetle",
-    image: "",
+    image: beetle,
     price: 344.3,
     description: "beetle is a good insect",
     status: "available",
