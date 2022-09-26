@@ -7,5 +7,5 @@ export default function Product() {
     return <SingleProduct key={i} product={product} />;
   });
 
-  return <>{listOfProducts}</>;
+  return <div className="bruh">{listOfProducts}</div>;
 }

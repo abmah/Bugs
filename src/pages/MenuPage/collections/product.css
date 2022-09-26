@@ -1,11 +1,11 @@
 .product-image-container {
-  height: 50vw;
   display: flex;
   justify-content: left;
 }
 
 .product {
-  margin-bottom: 15vw;
+  margin-bottom: 10vw;
+  margin-left: 1vw;
 }
 
 .product-image {
@@ -15,7 +15,7 @@
   opacity: 0;
 }
 .image-animation {
-  animation: expand1 1.2s forwards;
+  animation: expand1 0.7s forwards;
 }
 @keyframes expand1 {
   0% {
@@ -38,18 +38,17 @@
 
 .product-name {
   font-size: 10vw;
-  margin-left: -10vw;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
 
-  animation: slide-from-bottom 1.6s forwards;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
 }
 
 .product-description {
   font-size: 2vw;
 
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: rgb(99, 99, 99);
 }
 
 .product-price {
@@ -67,7 +66,7 @@
   max-width: 25vw;
   font-weight: 600;
 
-  color: rgb(0, 0, 0);
+  color: rgb(60, 60, 60);
 }
 .product-quantity {
   font-size: 3vw;
@@ -75,7 +74,7 @@
   max-width: 25vw;
   font-weight: 600;
 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 153, 0);
 }
 
 .add-to-cart-button {
@@ -86,4 +85,58 @@
   font-size: 3vw;
   margin-top: 2vw;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .product-image {
+    width: 25vw;
+    height: 10vw;
+    object-fit: cover;
+  }
+
+  .image-animation {
+    animation: expand1 0.4s forwards;
+  }
+  .product-name {
+    font-size: 5vw;
+  }
+  .product-description {
+    font-size: 1vw;
+  }
+  .product-price {
+    font-size: 2vw;
+  }
+  .product-status {
+    font-size: 2vw;
+  }
+  .product-quantity {
+    font-size: 2vw;
+  }
+  .add-to-cart-button {
+    font-size: 2vw;
+  }
+  .bruh {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  @keyframes expand1 {
+    0% {
+      height: 1vw;
+      opacity: 0;
+      object-fit: cover;
+    }
+    80% {
+      height: 25vw;
+      object-fit: cover;
+    }
+    100% {
+      opacity: 1;
+      height: 25vw;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }

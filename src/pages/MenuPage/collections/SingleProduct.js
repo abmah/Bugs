@@ -1,24 +1,22 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 export default function SingleProduct({ product }) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.5 });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: product.id * 0.1,
+    delay: product.id * 100,
+  });
 
   function addToCart() {
     console.log(product);
   }
   return (
     <div className="product" key={product.id}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-        className="product-image-container"
-      >
+      <div className="product-image-container">
         <img
-          style={{
-            width: product.id % 2 === 0 ? "70vw" : "60vw",
-          }}
+          // style={{
+          //   width: product.id % 2 === 0 ? "30vw" : "30vw",
+          // }}
           ref={ref}
           className={`product-image ${inView ? "image-animation" : ""}`}
           src={product.image}
