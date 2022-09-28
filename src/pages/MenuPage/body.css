@@ -89,6 +89,7 @@
   position: fixed;
   right: 1vw;
   mix-blend-mode: difference;
+  z-index: 1000;
 }
 
 .cater-list {

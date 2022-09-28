@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useInView } from "react-intersection-observer";
+import { CartContext } from "../../Cart/context/CartContext";
 export default function SingleProduct({ product }) {
   const [ref, inView] = useInView({
     threshold: product.id * 0.1,
@@ -7,9 +8,12 @@ export default function SingleProduct({ product }) {
     triggerOnce: true,
   });
 
+  const { cartItems, setCartItems } = useContext(CartContext);
+
   function addToCart() {
-    console.log(product);
+    setCartItems([...cartItems, product]);
   }
+  console.log(cartItems);
   return (
     <div className="product" key={product.id}>
       <div className="product-image-container">

@@ -13,6 +13,7 @@
   object-fit: cover;
   object-position: bottom;
   opacity: 0;
+  animation: fadein 0.5s ease-in-out forwards;
 }
 .image-animation {
 }
