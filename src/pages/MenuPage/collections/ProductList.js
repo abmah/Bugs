@@ -164,15 +164,5 @@ const ProductList = [
     quantity: 43,
     total: 0,
   },
-  {
-    id: 3,
-    name: "Beetle",
-    image: beetle,
-    price: 344.3,
-    description: "beetle is a good insect",
-    status: "available",
-    quantity: 43,
-    total: 0,
-  },
 ];
 export default ProductList;

@@ -2,9 +2,9 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 export default function SingleProduct({ product }) {
   const [ref, inView] = useInView({
-    triggerOnce: true,
     threshold: product.id * 0.1,
     delay: product.id * 100,
+    triggerOnce: true,
   });
 
   function addToCart() {
@@ -29,7 +29,7 @@ export default function SingleProduct({ product }) {
             Price: <span className="price-highlight">{product.price}</span>
           </div>
           <div className="product-status">{product.status}</div>
-          <div className="product-quantity">quantity: {product.quantity}</div>
+          {/* <div className="product-quantity">quantity: {product.quantity}</div> */}
           <div className="product-description">{product.description}</div>
           <button onClick={addToCart} className="add-to-cart-button">
             add to cart

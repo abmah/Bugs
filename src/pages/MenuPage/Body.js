@@ -3,6 +3,7 @@ import { useState } from "react";
 import caterpiller from "../../images/caterpillar.jpg";
 import TempPage from "./Temp/TempPage";
 import Product from "./collections/Product";
+import { Link } from "react-router-dom";
 export default function Body() {
   const [previousPage, setPreviousPage] = useState(true);
   setTimeout(() => {
@@ -25,7 +26,9 @@ export default function Body() {
 
   const showPage = (
     <div>
-      <div className="main-cart">cart</div>
+      <Link to={"/cart"} className="main-cart">
+        cart
+      </Link>
       {pageHeader}
       <div className="space"></div>
       <Product />

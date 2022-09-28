@@ -53,7 +53,7 @@ export default function Header() {
     <div className="header">
       <div className="nav-bar">
         <Link to={"/collection"}>collection</Link>
-        <Link>cart</Link>
+        <Link to={"/cart"}>cart</Link>
       </div>
       <div className="explain">
         *this website is not about bugs but rather insects but bugs sounded

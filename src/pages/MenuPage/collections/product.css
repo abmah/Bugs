@@ -12,10 +12,9 @@
   width: 50vw;
   object-fit: cover;
   object-position: bottom;
-  opacity: 1;
+  opacity: 0;
 }
 .image-animation {
-  animation: expand1 0.7s forwards;
 }
 /* @keyframes expand1 {
   0% {
@@ -85,6 +84,14 @@
   font-size: 3vw;
   margin-top: 2vw;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+  color: rgb(255, 153, 0);
+}
+.add-to-cart-button:active {
+  transform: scale(0.99);
 }
 
 @media screen and (min-width: 768px) {
@@ -95,7 +102,7 @@
   }
 
   .image-animation {
-    animation: expand1 0.4s forwards;
+    animation: fadein 0.5s ease-in-out forwards;
   }
   .product-name {
     font-size: 5vw;
@@ -139,4 +146,13 @@
       object-position: center;
     }
   } */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
